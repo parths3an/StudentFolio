@@ -19,7 +19,8 @@ if grep -q committed temp.txt; then
     else
          echo "git push failed"
 	 echo "Please retype your credentials properly."
-         git push	
+         rm temp.txt
+	 git push	
     fi 
     #git status > temp.txt
 else

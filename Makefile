@@ -22,9 +22,7 @@ main: main.o Student.o
 
 main.o: main.cpp 
 
-Student.o: Student.h Node.o
-
-Node.o: Node.h
+Student.o: Student.h 
 
 clean:
 		rm -f pathfinder *.o core*

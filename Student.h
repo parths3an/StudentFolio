@@ -3,10 +3,10 @@
 
 #include <iostream>
 #include <utility> 
-
+#include "SemesterRecord.h"
 using namespace std;
 
-class Student
+class Student : public SemesterRecord
 {
   public:
     //constructor
@@ -17,9 +17,11 @@ class Student
 
     //Accessor function
     pair<string, string> getStudentInfo();
-
+    	
   private:
     string studentName;
     string id;
+    double gpa;
+    //semesterRecord s1; 	    	
 };
 #endif 
