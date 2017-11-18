@@ -1,11 +1,14 @@
 On branch master
 Your branch and 'origin/master' have diverged,
-and have 1 and 4 different commits each, respectively.
+and have 2 and 4 different commits each, respectively.
   (use "git pull" to merge the remote branch into yours)
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
 
-	modified:   temp.txt
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   temp.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
