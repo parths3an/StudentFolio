@@ -21,7 +21,7 @@ if grep -q committed temp.txt; then
 	 echo "Please retype your credentials properly."
          git push	
     fi 
-    git status > temp.txt
+    #git status > temp.txt
 else
     echo "Nothing to commit, working directory is clean."
     fi
