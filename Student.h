@@ -4,9 +4,11 @@
 #include <iostream>
 #include <utility> 
 #include "SemesterRecord.h"
+#include "ClassInfo.h"
+
 using namespace std;
 
-class Student : public SemesterRecord
+class Student 
 {
   public:
     //constructor
@@ -22,6 +24,7 @@ class Student : public SemesterRecord
     string studentName;
     string id;
     double gpa;
+    
     //semesterRecord s1; 	    	
 };
 #endif 

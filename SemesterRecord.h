@@ -2,21 +2,32 @@
 #define SEMESTER_RECORD_H
 
 #include <string>
-#include "ClassInfo.h" 
+#include <map>
+#include "ClassInfo.h"
 
 using namespace std;
 
-class SemesterRecord : public ClassInfo
+
+class SemesterRecord 
 {
 
   public: 
     SemesterRecord(string nOfSem): semName(nOfSem){};
-//    double calcSemGPA(c1.getTUnits, c1.getTotalEarned);
 
     protected: 
     string semName;
-    vector< pair<ClassInfo, double >> semClassVec;
     double semGPA;  
+    double semCredits;
+    double semEarnedCredits;
+
+    /**
+     * This will keep track of the class name, 
+     * and a pair. Pair contains the classInfo object and 
+     * second parameter will the gpa in that class. 
+     */ 
+    map< string, pair<ClassInfo,double> >classList;
+
+    
 };
 
 #endif
