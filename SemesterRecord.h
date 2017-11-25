@@ -1,4 +1,4 @@
-#ifndef SEMESETER_RECORD_H
+#ifndef SEMESTER_RECORD_H
 #define SEMESTER_RECORD_H
 
 #include <string>
@@ -23,9 +23,12 @@ class SemesterRecord
     /**
      * This will keep track of the class name, 
      * and a pair. Pair contains the classInfo object and 
-     * second parameter will the gpa in that class. 
+     * second parameter will the grade in that class. 
+     * HOT:: Your reason to keep the grade as string is, 
+     *       so that you create the grade for both the two systems
+     *       the whole point system or the +/- system. 
      */ 
-    map< string, pair<ClassInfo,double> >classList;
+    map< string, pair<ClassInfo,string> >classList;
 };
 
 #endif
