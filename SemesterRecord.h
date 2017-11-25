@@ -26,8 +26,6 @@ class SemesterRecord
      * second parameter will the gpa in that class. 
      */ 
     map< string, pair<ClassInfo,double> >classList;
-
-    
 };
 
 #endif

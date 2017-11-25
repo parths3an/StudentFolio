@@ -3,7 +3,7 @@
 
 pair<string, string> Student::getStudentInfo()
 {
-auto newPair = make_pair(studentName,id);
+pair<string,string>newPair = make_pair(studentName,id);
 return newPair;
 }
 

@@ -4,7 +4,6 @@
 #include <iostream>
 #include <utility> 
 #include "SemesterRecord.h"
-#include "ClassInfo.h"
 
 using namespace std;
 

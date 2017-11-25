@@ -1,5 +1,5 @@
-#ifndef SEMESETER_RECORD_H
-#define SEMESTER_RECORD_H
+#ifndef CLASS_INFO_H 
+#define CLASS_INFO_H 
 
 #include <string>
 #include <list>
@@ -15,12 +15,10 @@ public:
     ClassInfo(string className, double classUnit):
     cName(className), cUnit(classUnit){};
 
-private: 
-    string cName;
+private: string cName;
     double cUnit;
     list<string> preReqs;
 };
-
 
 
 #endif
