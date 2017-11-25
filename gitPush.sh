@@ -4,6 +4,7 @@
 git status > temp.txt
 if grep -q committed temp.txt; then
     echo "There are unstaged changes..."
+    rm temp.txt
     git status
     git add .
     echo "Added all the files to the stagging area."
