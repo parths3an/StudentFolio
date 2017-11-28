@@ -13,12 +13,28 @@ class SemesterRecord
 
   public: 
     SemesterRecord(string nOfSem): semName(nOfSem){};
+    
+    //Accessor functions
+    
+    double getSemCredits();
+    double getSemEarnedCredits();
+    double getGPA(); 
+
+    //Mutator functions
+    void setGPA();
+
+    //Helper function 
+    double gpaCalc(double semCredits,double semEarnedCredits);
+
+    //Destructor
+    ~SemesterRecord();
 
     protected: 
     string semName;
     double semGPA;  
     double semCredits;
     double semEarnedCredits;
+    
 
     /**
      * This will keep track of the class name, 
